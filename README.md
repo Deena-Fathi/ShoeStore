@@ -62,9 +62,10 @@ Open the starter project in Android Studio
     * A new layout
     * A TextView label and EditView for the
       * Shoe Name
-      * Company
+      * Brand
       * Shoe Size
-      * Description
+      * Price
+      * About
     * A Cancel button with an action to navigate back to the shoe list screen
     * A Save button with an action to navigate back to the shoe list screen and add a new Shoe to the Shoe View Model
 
@@ -77,12 +78,16 @@ Open the starter project in Android Studio
     * Use DataBindingUtil to inflate the shoe_list layout
     * Add a new layout item into the scrollview for each shoe.
     
-###Perview
+### Perview
 <p align = "left">
   <img src="./ScreenShots/SignInFragment.png" width="200">
   <img src="./ScreenShots/WelcomeFragment.png" width="200">
+</p>
+<p align = "left">
   <img src="./ScreenShots/InstructionsFragment.png" width="200">
   <img src="./ScreenShots/ShoeListFragment.png" width="200">
-  <img src="./ScreenShots/AddShoeFragment.png" width="200">
+</p>
+<p align = "left"> 
+<img src="./ScreenShots/AddShoeFragment.png" width="200">
   <img src="./ScreenShots/AfterAddingShoe.png" width="200">
 </p>
