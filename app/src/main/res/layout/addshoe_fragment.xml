@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.udacity.shoestore.view_model.ShoeStoreViewModel" />
+    </data>
+
+    <!-- using LinearLayout to have everything vertically staked
+    as the user may be accustomed to such way-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:gravity="center|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_add_shoe"
+            style="@style/sign_in_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_shoe"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            style="@style/add_shoe_style"
+            android:hint="@string/shoe_name"
+            android:importantForAutofill="no"
+            android:inputType="textCapWords"
+            android:text="@={viewmodel.name}"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/edit_brand"
+            style="@style/add_shoe_style"
+            android:hint="@string/shoe_brand"
+            android:importantForAutofill="no"
+            android:inputType="textCapWords"
+            android:text="@={viewmodel.brand}"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/edit_size"
+            style="@style/add_shoe_style"
+            android:hint="@string/shoe_size"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:text="@={viewmodel.size}"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/edit_price"
+            style="@style/add_shoe_style"
+            android:hint="@string/shoe_price"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:text="@={viewmodel.price}"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/edit_about"
+            style="@style/add_shoe_style"
+            android:hint="@string/shoe_about"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:text="@={viewmodel.about}"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/save_button"
+            style="@style/button_style"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/button1_margin"
+            android:text="@string/add"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            style="@style/button_style"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/button2_margin"
+            android:backgroundTint="@color/error_color"
+            android:text="@string/cancel"
+            android:textColor="@color/text_error_color"
+            tools:ignore="TextContrastCheck" />
+
+    </LinearLayout>
+</layout>

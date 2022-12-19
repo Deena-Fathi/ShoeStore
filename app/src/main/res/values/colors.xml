@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#697879</color>
+    <color name="colorPrimaryDark">#2C3639</color>
+    <color name="colorSeperator">#CD2C3639</color>
+    <color name="colorPrimaryDark2">#242D2F</color>
+    <color name="colorAccent">#D4DEDE</color>
+    <color name="colorAccentDark">#3F4E4F</color>
+    <color name="error_color">#7F2235</color>
+    <color name="text_error_color">#E8C4CC</color>
+    <color name="Black">#000000</color>
+    <color name="White">#FFFFFF</color>
+</resources>

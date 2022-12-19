@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="shoe"
+            type="com.udacity.shoestore.shoe.Shoe" />
+    </data>
+
+    <!--using LinearLayout to have everything vertically stacked
+    so that it is easier to se the data for the user -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp">
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/added_shoe"
+            android:text="@{shoe.name}"
+            android:textSize="24sp"
+            tools:text="Name Placeholder" />
+
+
+        <TextView
+            android:id="@+id/brand"
+            style="@style/added_shoe"
+            android:layout_marginTop="5dp"
+            android:text="@{`Brand: `+ shoe.brand}"
+            tools:text="brand Placeholder" />
+
+
+        <TextView
+            android:id="@+id/size"
+            style="@style/added_shoe"
+            android:layout_marginTop="5dp"
+            android:text="@{`Size: `+shoe.size}"
+            tools:text="Size Placeholder" />
+
+
+        <TextView
+            android:id="@+id/price"
+            style="@style/added_shoe"
+            android:layout_marginTop="5dp"
+            android:text="@{`Price: `+shoe.price}"
+            tools:text="Price Placeholder" />
+
+
+        <TextView
+            android:id="@+id/about"
+            style="@style/added_shoe"
+            android:layout_marginTop="5dp"
+            android:text="@{`About: `+shoe.about}"
+            tools:text="About Placeholder" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorSeperator" />
+    </LinearLayout>
+</layout>
