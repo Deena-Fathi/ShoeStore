@@ -76,3 +76,13 @@ Open the starter project in Android Studio
     * Observe the shoes variable from the ViewModel
     * Use DataBindingUtil to inflate the shoe_list layout
     * Add a new layout item into the scrollview for each shoe.
+    
+###Perview
+<p align = "left">
+  <img src="./ScreenShots/SignInFragment.png" width="200">
+  <img src="./ScreenShots/WelcomeFragment.png" width="200">
+  <img src="./ScreenShots/InstructionsFragment.png" width="200">
+  <img src="./ScreenShots/ShoeListFragment.png" width="200">
+  <img src="./ScreenShots/AddShoeFragment.png" width="200">
+  <img src="./ScreenShots/AfterAddingShoe.png" width="200">
+</p>
